@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Arrays Method 4</title>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            //Sort() - Number sort
+            var arr1 = [5, 6 , 9, 4 ,10 , 3];
+            var arrsort = arr1.sort();
+            document.write(arrsort[0]);
+            document.write("<br>");
+
+            //Splic()  add and remove element
+            var weekarr = ["Sun" , "Mon" , "Tue" , "Wed" , "Thu" , "Frid" , "Sat"];
+            var weekarrra = weekarr.splice(2,4, "Mars");
+                     document.writeln(weekarr);
+                     document.writeln("<br>");
+
+
+
+
+            //unshift() starting element add and remove
+            var arr2 = [8, 5, 7, 9];
+            var arrnum = arr2.unshift(6);
+            document.writeln(arr2);  
+            document.writeln("<br>");
+
+            //values()
+            var weekarray = weekarr.values();
+            // for(value of weekarray){
+            // 	document.writeln(value + "<br>")
+            // }
+
+            document.writeln(weekarray.next().value + "<br>");   
+            document.writeln(weekarray.next().value + "<br>");   
+            document.writeln(weekarray.next().value + "<br>");   
+            document.writeln(weekarray.next().value + "<br>");     
+
+
+ 				//tolocalstring
+            	
+            	var strarr = [1, "a" , new Date()];
+            	var localstrarr = strarr.toLocaleString();
+            	document.writeln(localstrarr);
+            		document.writeln("<br>");
+            	//toString()
+            	var tostringarr = strarr.toString();
+            	console.log(typeof(tostringarr));	
+
+          </script>
+
+        
+    </body>
+</html>

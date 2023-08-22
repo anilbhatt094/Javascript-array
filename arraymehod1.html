@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>Arrays concat</title>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           //Concat() Array
+           	var arr1 = ["C#" , "Java" , "Python"];
+           	var arr2 = ["HTML" , "CSS" ,"JavaScript"];
+           	var arr3 = [5,10,15,20,25,30];
+           	var arr4 = [1,2,3,[4,5] , 6 , 7];
+           	var arr5 = [2,4,6,8,10];
+           		
+           	var concatArry = arr1.concat(arr2);
+           	document.writeln(concatArry);
+           	document.writeln("<br>");
+           	
+           	//Copywithin() Array
+			var copywithinarry = arr2.copyWithin(0,1,2);
+           	document.writeln(copywithinarry);
+           		document.writeln("<br>");
+           		document.writeln("<br>");
+           
+           	//Entries() Array
+           	var entriesarry = arr1.entries();
+           for(value of entriesarry){
+           		document.writeln(value + "<br>");
+           }
+
+           //every() Array
+           	        function checkvalue(value) {
+           		return value>4;
+           	}   
+           		document.writeln(arr3.every(checkvalue));
+           			document.writeln("<br>");
+           //flat() Array		
+           	var flatarray = arr4.flat();
+           	document.writeln(flatarray);
+           		document.writeln("<br>");
+           //flatMap() Array
+           var flatmaparray = arr5.flatMap(x => [x/2]);
+           document.writeln(flatmaparray);
+           	
+        </script>
+    </body>
+</html>

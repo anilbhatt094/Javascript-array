@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>Arrays concat</title>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           //Fill() Array
+           var languages = ["HTML" , "CSS" , "JavaScript"];
+           //var result = languages.fill("ReactJs");
+           var result = languages.fill("ReactJs" , 0,1);
+           document.writeln(result);
+
+           //From() Array
+
+           var fromarray = Array.from("Hello");
+           document.writeln("<br>" + fromarray);
+            document.writeln("<br>");
+           
+            //Filter() Array
+           var nums = [5,10,15,20,25,30,50];
+           function check(value){
+            return value >=10;
+           }
+           document.writeln(nums.filter(check));
+           document.writeln("<br>");
+           //Find() Array
+
+           var findArray = nums.find(x=> x > 30);
+           document.write(findArray);
+           document.write("<br>")
+           //FindIndex() Array
+           var findindxarray = nums.findIndex(x=> x>30);
+           document.write(findindxarray);
+           document.write("<br>");
+           //foreach() Array
+           var value=0;
+           nums.forEach(function(fetch){
+            document.writeln(value +=fetch);
+           });
+
+           	
+        </script>
+    </body>
+</html>

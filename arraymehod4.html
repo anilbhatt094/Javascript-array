@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>Arrays Method 4</title>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            //Array of() - Holding of arrguments
+            document.writeln(Array.of(1,"Hello",5,6,7));
+            document.write("<br>");
+            //Push() - elment add
+            var arr1 = [5,9,4,8,1];
+            arr1.push(5);
+            document.writeln(arr1 + "<br>");
+          
+            //Pop() - element remove 
+            document.writeln(arr1.pop());
+            document.writeln("<br>");
+            //reverse() - element reverse 
+            document.writeln(arr1.reverse());
+            document.write("<br>")
+            document.writeln(arr1.pop() + "<br>");
+  
+            //reduce() - arthmetic function use (+,-,*)
+            var arr2=[4,9,5,2];
+            var arr3 = arr2.reduce(function(accumulator,currenetValue){
+              return accumulator + currenetValue;
+            });
+            document.writeln(arr3);
+            document.write("<br>");
+  
+            //Some() - true and false result
+            var arr4 = [10, 30, 50, 80];
+            function arrresult(tttt){
+              return tttt > 50;
+            }
+            var arrresultshow = arr4.some(arrresult);
+            document.writeln(arrresultshow);
+            document.writeln("<br>");
+  
+            //Shift() - First element remove
+            document.writeln(arr4.shift());
+            document.write("<br>");
+            //Slice() - 
+            var arr5 = [1,2,3,7,8,9,0]
+            var arrslice = arr5.slice(4,7);
+            document.writeln(arrslice);
+          </script>
+
+        
+    </body>
+</html>

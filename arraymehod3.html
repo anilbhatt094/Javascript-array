@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>Arrays Method 3</title>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        //Includes()    
+        var arr1 = ["C" , "C++" , "Java" , "Python" ];
+        var arr2 = [2,4,6,8,10];
+        document.writeln(arr1.includes("Java"));
+        document.write("<br>");
+
+        //Index()
+        document.writeln(arr1.indexOf("Python"));
+            document.write("<br>")
+        //IsArray
+        document.writeln(Array.isArray(arr1));
+        document.write("<br>")
+        //Join
+        document.writeln(arr1.join(" "));
+        document.writeln("<br>");
+        //Key
+        var keyarry = arr1.keys();
+        for (value of  keyarry){
+        document.write(value + "<br>");
+        }
+        document.write("<br>");
+        //lastindexof()
+        document.write(arr1.lastIndexOf("Python"));
+
+        //Map()
+        document.write("<br>");
+        var mapArray = arr2.map(x=> x/2);
+        document.write(mapArray);
+
+        </script>
+    </body>
+</html>
